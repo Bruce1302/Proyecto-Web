@@ -1,4 +1,4 @@
-package me.bruce.App;
+package me.bruce.App.Web;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -11,6 +11,7 @@ public class controllerIndex {
     public String inicio()
     {
         log.info("Ejecutando el controlador");
+
 
         return "index";
     }
