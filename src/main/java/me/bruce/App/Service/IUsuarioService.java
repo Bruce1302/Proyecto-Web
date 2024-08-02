@@ -1,6 +1,7 @@
 package me.bruce.App.Service;
 
 import me.bruce.App.Domain.Usuario;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 

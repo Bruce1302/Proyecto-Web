@@ -31,11 +31,4 @@ public class controllerIndex {
         return "agregarUsuario";
     }
 
-   /* @GetMapping("/saveUser")
-    public String saveUser(Usuario usuario) //Al pasar como parametro Usuario usuario, se esta buscando un usuario y no lo encuentra lo crea
-    {
-        usuarioService.guardar(usuario);
-        log.info(usuario.toString());
-        return "redirect:/";
-    }*/
 }
