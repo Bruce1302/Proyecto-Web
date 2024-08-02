@@ -2,9 +2,19 @@
 <html lang="es" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Agregar usuario</title>
 </head>
 <body>
-
+    <a th:href="@{/}">Regresar Inicio</a>
+    <h2>Se peude agregar una persona</h2>
+    <form th:action="@{/saveUser}" method="post" th:object="${usuario}">
+        <label for="nombreUsuario">Nombre</label>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" th:field="*{nombreUsuario}">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" th:field="*{contrasenia}">
+        <br>
+        <input type="submit" name="saveUser" value="Guardar">
+    </form>
 </body>
 </html>
